@@ -13,7 +13,7 @@ This repository is a POC for creating VMs on ESXi using Packer. Things work like
 - A VMware ESXi machine* with SSH enabled (You will run commands against this machine)
 - [Optional] DHCP Server if you want to use DHCP to assign IPs to VMs
 
-* Tested on ESXi 6.7.0 Update 3
+> * Tested on ESXi 6.7.0 Update 3
 
 ## Before You Start
 #### On jumpstart
