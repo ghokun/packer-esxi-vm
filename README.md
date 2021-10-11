@@ -9,10 +9,11 @@ This repository is a POC for creating VMs on ESXi using Packer. Things work like
 - Boot command contains link to the jumpstart machine's web server
 - Cloud init is triggered with `user-data` and `meta-data` files.
 ## Prerequisites
-
 - A jumpstart machine (You will run commands using this machine)
-- A VMware ESXi machine with SSH enabled (You will run commands against this machine)
+- A VMware ESXi machine* with SSH enabled (You will run commands against this machine)
 - [Optional] DHCP Server if you want to use DHCP to assign IPs to VMs
+
+* Tested on ESXi 6.7.0 Update 3
 
 ## Before You Start
 #### On jumpstart
