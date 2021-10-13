@@ -15,6 +15,9 @@ source "vmware-iso" "ubuntu2004" {
   remote_password        = "${var.remote_password}"
   vnc_disable_password   = true
   headless               = false
+  # Uncomment for ESXi 7.0 or greater
+  # vnc_over_websocket   = true
+  # insecure_connection  = true
 
   # VM settings
   vm_name                = "ubuntu2004"
