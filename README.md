@@ -13,7 +13,7 @@ This repository is a POC for creating VMs on ESXi using Packer. Things work like
 - A VMware ESXi machine* with SSH enabled (You will run commands against this machine)
 - [Optional] DHCP Server if you want to use DHCP to assign IPs to VMs
 
-> * Tested on ESXi 6.7.0 Update 3
+> * Tested on 6.7.0 Update 3 and 7.0 Update 2
 
 ## Before You Start
 #### On jumpstart
@@ -55,7 +55,7 @@ chmod +x /etc/rc.local.d/local.sh
 ```
 
 - Thanks to [chrisipa](https://github.com/chrisipa/packer-esxi/blob/master/local.sh) for this script.
-
+- If you are using ESXi 7.0 or greater remove VNC lines from `local.sh` file. Enable GuestIPHack only.
 
 ## Run Packer
 ```bash
